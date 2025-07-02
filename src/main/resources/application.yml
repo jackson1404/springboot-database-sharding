@@ -10,6 +10,6 @@ spring:
         password: postgres
       - id: shard2
         url: jdbc:postgresql://localhost:5432/shard2-db-test
-          username: postgres
-          password: postgres
-    shard-key: customer_id
+        username: postgres
+        password: postgres
+    shard-key: customer_id # The field to use for sharding
