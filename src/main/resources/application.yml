@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-db-shard
+
+  sharding:
+    shards:
+      - id: shard1
+        url: jdbc:postgresql://localhost:5432/shard1-db-test
+        username: postgres
+        password: postgres
+      - id: shard2
+        url: jdbc:postgresql://localhost:5432/shard2-db-test
+          username: postgres
+          password: postgres
+    shard-key: customer_id
